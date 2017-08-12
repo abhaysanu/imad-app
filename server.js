@@ -12,10 +12,10 @@ app.get('/article-one', function (req. res){
     res.send('Articl one is being requested and will be served');
 });
 app.get('/article-two', function (req. res){
-    res.send('Articl two is being requested and will be served')
+    res.send('Articl two is being requested and will be served');
 });
 app.get('/article-three', function (req. res){
-    res.send('Articl three is being requested and will be served')
+    res.send('Articl three is being requested and will be served');
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
