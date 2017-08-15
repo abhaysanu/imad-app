@@ -55,7 +55,7 @@ var articles = {
                         HEy buddy, this is my new webapp and I'm going to rock everythng I do at first time
                     </p><p align='justify'>
                         HEy buddy, this is my new webapp and I'm going to rock everythng I do at first time
-                    </p>}
+                    </p>}`
 };
 
 function createTemplate(data){
@@ -92,7 +92,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/article-one', function (req, res){
-ar articleName= req.params.articleName;
+
+
+var articleName= req.params.articleName;
   res.send(createTemplate(articles[articleName]));
 });
 app.get('/ui/style.css', function (req, res) {
