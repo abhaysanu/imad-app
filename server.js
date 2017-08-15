@@ -8,26 +8,19 @@ app.use(morgan('combined'));
 var articleOne = {
     title: 'Webcentre- No.1 destination for everything about web',
     date: ' 12sup>th</sup> August, 2017, Saturday',
-    heading: `And my first webapp begins here',
-                content: "<div class='container'>
-                        <a href='/'>Go To Home</a>
-                        <h1 align='center'>And my first webapp begins here
-                        </h1>
-                        <p align='center'><font color='white'>Article One</font></p>
-                        <p align='justify'>
-                        HEy buddy, this is my new webapp and I'm going to rock everythng I do at first time
-                        </p>
-                        <p align='justify'>
-                        HEy buddy, this is my new webapp and I'm going to rock everythng I do at first time
-                        </p>
-                        <p align='justify'>
-                        HEy buddy, this is my new webapp and I'm going to rock everythng I do at first time
-                        </p>
-                        <br>
-                        <div>
-                        12<sup>th</sup>  August, 2017, Saturday
-                        </div>
-                        </div>`
+    heading: 'And my first webapp begins here',
+    content: `  <p align='center'><font color='white'>Article One</font></p>
+                <p align='justify'>
+                    HEy buddy, this is my new webapp and I'm going to rock everythng I do at first time
+                </p>
+                 <p align='justify'>
+                    HEy buddy, this is my new webapp and I'm going to rock everythng I do at first time
+                </p>
+                 <p align='justify'>
+                    HEy buddy, this is my new webapp and I'm going to rock everythng I do at first time
+                </p>
+                <br>`
+                          `
 }
 
 function createTemplate(data){
@@ -38,20 +31,23 @@ var heading= data.heading;
     
 
 var htmlTemplate = `
-    <html>
+<html>
     <head>
     <title>${title}
     </title>
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body bgcolor='light blue' text='red'>
+        <div class='container'>
+        <a href='/'>Go To Home</a>
+      ${headig}
         ${content}
-        <div>
-           ${date}
-        </div>
+        <br>
+        ${date}
         </div>
     </body>
 </html>
+
 `;
 return htmlTemplate;
 }
