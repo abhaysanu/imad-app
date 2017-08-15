@@ -56,8 +56,8 @@ var articles = {
                     </p><p align='justify'>
                         HEy buddy, this is my new webapp and I'm going to rock everythng I do at first time
                     </p>}`
+}
 };
-
 function createTemplate(data){
 var title= data.title;
 var date= data.date;
