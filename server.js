@@ -9,7 +9,7 @@ var articleOne = {
     title: 'Webcentre- No.1 destination for everything about web',
     date: ' 12sup>th</sup> August, 2017, Saturday',
     heading: 'And my first webapp begins here',
-    content: `  <p align='center'><font color='white'>Article One</font></p>
+    content: `<p align='center'><font color='white'>Article One</font></p>
                 <p align='justify'>
                     HEy buddy, this is my new webapp and I'm going to rock everythng I do at first time
                 </p>
@@ -19,35 +19,36 @@ var articleOne = {
                  <p align='justify'>
                     HEy buddy, this is my new webapp and I'm going to rock everythng I do at first time
                 </p>
-                <br>`
+                <br>'
                           `
-}
+    };
 
 function createTemplate(data){
 var title= data.title;
 var date= data.date;
 var content= data.content;
 var heading= data.heading;
-    
 
 var htmlTemplate = `
-<html>
-    <head>
-    <title>${title}
-    </title>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body bgcolor='light blue' text='red'>
-        <div class='container'>
-        <a href='/'>Go To Home</a>
-      ${headig}
-        ${content}
-        <br>
-        ${date}
-        </div>
-    </body>
-</html>
-
+    <html>
+        <head>
+        <title>${title}
+        </title>
+            <link href="/ui/style.css" rel="stylesheet" />
+        </head>
+        <body bgcolor='light blue' text='red'>
+            <div class='container'>
+            <a href='/'>Go To Home</a>
+            <h1 align='center'>${heading}
+            </h1>
+            ${content}
+            <br>
+            <div>
+                ${date}
+            </div>
+            </div>
+        </body>
+    </html>
 `;
 return htmlTemplate;
 }
