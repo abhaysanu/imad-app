@@ -34,7 +34,7 @@ var articles = {
                     <br>'
                     <p align='justify'>
                         HEy buddy, this is my new webapp and I'm going to rock everythng I do at first time
-                    </p>
+                    </p>`
                     },
     articleThree: {
         title: 'Webcentre- No.1 destination for everything about web',
