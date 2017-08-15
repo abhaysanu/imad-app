@@ -25,9 +25,22 @@ var articles = {
     },
     articleTwo: {
         title: 'Webcentre- No.1 destination for everything about web',
-        date: ' 12sup>th</sup> August, 2017, Saturday',
+        date: ' 9sup>th</sup> September, 2017, Monday',
         heading: 'And my first webapp begins here',
         content: `<p align='center'><font color='white'>Article Two</font></p>
+                    <p align='justify'>
+                        HEy buddy, this is my new webapp and I'm going to rock everythng I do at first time
+                    </p>
+                    <br>'
+                    <p align='justify'>
+                        HEy buddy, this is my new webapp and I'm going to rock everythng I do at first time
+                    </p>
+                    },
+    articleThree: {
+        title: 'Webcentre- No.1 destination for everything about web',
+        date: ' 14sup>th</sup> March, 2017, Wednesday',
+        heading: 'And my first webapp begins here',
+        content: `<p align='center'><font color='white'>Article Three</font></p>
                     <p align='justify'>
                         HEy buddy, this is my new webapp and I'm going to rock everythng I do at first time
                     </p>
@@ -42,9 +55,7 @@ var articles = {
                         HEy buddy, this is my new webapp and I'm going to rock everythng I do at first time
                     </p><p align='justify'>
                         HEy buddy, this is my new webapp and I'm going to rock everythng I do at first time
-                    </p>
-                    },
-    articleThree: {}
+                    </p>}
 };
 
 function createTemplate(data){
