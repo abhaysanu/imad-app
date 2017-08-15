@@ -5,6 +5,34 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var articleOne = {
+    title: 'Webcentre- No.1 destination for everything about web',
+    date: 'August, 2017, Saturday',
+    heading: `And my first webapp begins here',
+                content: "<div class='container'>
+                        <a href='/'>Go To Home</a>
+                        <h1 align='center'>And my first webapp begins here
+                        </h1>
+                        <p align='center'><font color='white'>Article One</font></p>
+                        <p align='justify'>
+                        HEy buddy, this is my new webapp and I'm going to rock everythng I do at first time
+                        </p>
+                        <p align='justify'>
+                        HEy buddy, this is my new webapp and I'm going to rock everythng I do at first time
+                        </p>
+                        <p align='justify'>
+                        HEy buddy, this is my new webapp and I'm going to rock everythng I do at first time
+                        </p>
+                        <br>
+                        <div>
+                        12<sup>th</sup>  August, 2017, Saturday
+                        </div>
+                        </div>`
+}
+
+
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
