@@ -105,7 +105,7 @@ app.get('/ui/style.css', function (req, res) {
 var counter = 0;
 app.get('/counter', function (req, res) {
   counter = counter + 1;
-  var count = counter.toString();
+  var count = toString(counter);
   res.send(count);
 });
 
