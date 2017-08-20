@@ -4,7 +4,7 @@ element.innerHTML='Thank You';
 
 
 //Move The Image
-var img= document.getElementById('madi');
+var img= document.getElementById('madi.png');
 img.onclick= function () {
   img.style.marginleft='100px';  
 };
