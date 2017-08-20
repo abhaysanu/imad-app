@@ -7,7 +7,7 @@ element.innerHTML='Thank You';
 var img= document.getElementById('madi.png');
 var marginLeft=0;
 function moveRight() {
-    marginleft += 10;
+    marginleft = marginLeft + 10;
     img.style.marginLeft= marginLeft + 'px';
 }
 img.onclick= function () {
