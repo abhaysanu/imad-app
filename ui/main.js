@@ -5,6 +5,10 @@ element.innerHTML='Thank You';
 
 //Move The Image
 var img= document.getElementById('madi.png');
+var marginLeft=0;
+function moveRight() {
+    marginleft+=10;
+}
 img.onclick= function () {
-  img.style.marginleft='100px';  
-};
+  var interval = setInterval(moveRight, 100);  
+}
