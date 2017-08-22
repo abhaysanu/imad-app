@@ -99,13 +99,11 @@ var articleName = req.params.articleName;
   res.send(createTemplate(articles[articleName]));
 });
 
-
-app.get('/counter', function (req, res) {
-  counter = counter + 1;
-  res.send(counter.toString())
+var counter = 0;
+app.get('/counter', function(req, res) {
+   counter = counter + 1;
+   res.send(counter.toString())
 });
-
-
 
 
 
