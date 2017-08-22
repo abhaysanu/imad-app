@@ -5,9 +5,9 @@ element.innerHTML='Thank You';
 
 //Move The Image
 var img = document.getElementById('madi');
-
-var marginLeft=0;
 var counter = 0;
+var marginLeft=0;
+
 
 function moveRight() {
     marginleft = marginLeft + 50;
