@@ -5,7 +5,7 @@ element.innerHTML='Thank You';
 
 //Move The Image
 var img = document.getElementById('madi');
-var counter = 0;
+
 var marginLeft=0;
 
 
@@ -18,6 +18,7 @@ img.onclick = function () {
 };
 
     var button = document.getElementById('counter');
+    var counter = 0;
     button.onclick = function () {
     counter = counter + 1;
     var span = document.getElementById('count');
