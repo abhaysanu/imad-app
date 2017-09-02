@@ -114,9 +114,8 @@ app.get('/', function (req, res) {
      var hashedString = hash(req,params,input, 'this is a hashed string');
      res.send(hashedString);
   });
-  
-  
 
+});
 app.get('/:articleName', function (req, res){
 //artileName == article-one
 //article[articleName] == {} content object for article one
