@@ -116,19 +116,7 @@ app.get('/', function (req, res) {
   });
   
   
-var pool = new Pool(config);
-app.get('/test-db', function(req, res) {
-    pool.query("SELECT * FROM test", function(err, result){
-        if(err){
-            res.status(500).send(err.toString());
-        }
-        else{
-            res.send(JSON.srtingifly(result));
-        }
-    });
-});
-  
-});
+
 app.get('/:articleName', function (req, res){
 //artileName == article-one
 //article[articleName] == {} content object for article one
